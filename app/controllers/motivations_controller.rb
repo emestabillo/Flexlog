@@ -10,13 +10,13 @@ class MotivationsController < ApplicationController
 
   def create
     Motivation.create(motivation_params)
-    redirect_to motivation_path
+    redirect_to motivations_path
   end
 
   private
 
   def motivation_params
-    params.require(:motivation).permit(:quote, :comments)
+    params.require(:motivation).permit(:quote, :comment)
   end
 
 end
