@@ -14,16 +14,17 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   
-  <%= link_to 'Flexlog', root_path, class: 'navbar-brand' %>
+  <%= link_to 'FLEXLOG', root_path, class: 'navbar-brand' %>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-md-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+        <%= link_to 'Need a little push?', motivations_path, class: 'nav-link' %>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="nav-item">
-        <a class="nav-link" href="#">Create Workout</a>
+        <%= link_to 'Create Workout', new_workout_path, class: 'nav-link' %>
       </li>
     </ul>
   </div>

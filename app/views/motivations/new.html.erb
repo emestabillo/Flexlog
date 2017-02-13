@@ -1,0 +1,9 @@
+<div class="booyah-box col-xs-10 col-offset-1">
+  <h1>Inspire someone today:</h1>
+  <%= simple_form_for @motivation do |f| %>
+    <%= f.input :quote %>
+    <%= f.input :comment %>
+
+    <%= f.submit 'Add Quote', class: 'btn btn-primary' %>
+  <% end %>
+</div>
