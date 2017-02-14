@@ -1,5 +1,5 @@
 class MotivationsController < ApplicationController
-  before_action :find_workout, only: [:index]
+ 
  
   def index
     @motivation = Motivation.order("RANDOM()").first
@@ -23,8 +23,6 @@ class MotivationsController < ApplicationController
     params.require(:motivation).permit(:quote, :comment)
   end
 
-  def find_motivation
-    @motivation = Motivation.find(params[:id])
-  end
+  
 
 end

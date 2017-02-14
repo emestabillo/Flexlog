@@ -11,11 +11,12 @@ class WorkoutsController < ApplicationController
 
   def show
     @workout = Workout.find(params[:id])
+    
   end
 
   def create
     @workout = Workout.create(workout_params)
-    redirect_to workouts_path
+    redirect_to workout_path
   end
 
   private
@@ -24,5 +25,8 @@ class WorkoutsController < ApplicationController
     params.require(:workout).permit(:date, :workout, :length, :mood, :comment)
   end
 
+  def find_workout
+    @workout = Workout.find(params[:id])
+  end
 
 end
