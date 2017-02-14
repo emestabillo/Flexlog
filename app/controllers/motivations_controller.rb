@@ -9,8 +9,11 @@ class MotivationsController < ApplicationController
   end
 
   def create
-    Motivation.create(motivation_params)
+    @motivation = Motivation.create(motivation_params)
     redirect_to motivations_path
+  end
+
+  def show
   end
 
   private
