@@ -20,6 +20,7 @@ class MotivationsController < ApplicationController
 
   def motivation_params
     params.require(:motivation).permit(:quote, :comment)
+  end
 
   def find_motivation
     @motivation = Motivation.find(params[:id])
