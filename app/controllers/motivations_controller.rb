@@ -1,4 +1,5 @@
 class MotivationsController < ApplicationController
+  before_action :find_workout, only [:index]
  
   def index
     @motivation = Motivation.order("RANDOM()").first
