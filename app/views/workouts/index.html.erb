@@ -1,2 +1,8 @@
-<h1>Workout index is here</h1>
+<% @workouts.each do |workout| %>
+  <div class="booyah-box col-xs-10 col-xs-offset-1">
+    <%= link_to workout.date, workout_path(workout) %>
+    <%= workout.workout %>
+  </div>
+<% end %>
+
 
