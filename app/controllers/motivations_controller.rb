@@ -14,9 +14,6 @@ class MotivationsController < ApplicationController
     redirect_to motivations_path
   end
 
-  def show
-  end
-
   private
 
   def motivation_params
