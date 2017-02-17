@@ -1,10 +1,10 @@
 <br />
 <div class="booyah-box col-10 offset-1">
-  <h2 class="text-center"><%= @workout.date %></h2>
+  <h2 class="text-center"><%= @workout.date.strftime("%D %R %P") %></h2>
   <h2><%= @workout.workout %></h2>
   <h2><%= @workout.length %></h2>
   <h2><%= @workout.mood %></h2>
   <h2><%= @workout.comments %></h2>
 </div>
 <br />
-<h1><%= link_to 'Back to My Workouts', workouts_path %></h1>
+<h1 class="container fonti"><%= link_to 'Back to My Workouts', workouts_path %></h1>

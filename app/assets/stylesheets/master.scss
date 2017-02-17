@@ -1,6 +1,6 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Courgette|PT+Sans+Narrow');
-
+@import "font-awesome";
 
 
 .navbar {
@@ -62,5 +62,10 @@ h1, h2, h3 {
 
 .font {
   font-family: 'Courgette', cursive;
+}
+
+.fonti {
+  font-style: italic;
+  text-decoration: underline;
 }
 
