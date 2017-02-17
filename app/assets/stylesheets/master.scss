@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Courgette|PT+Sans+Narrow');
+
 
 
 .navbar {
@@ -52,5 +54,13 @@ body {
   margin-top:10px;
   margin-bottom:15px;
   padding: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.font {
+  font-family: 'Courgette', cursive;
 }
 

@@ -1,14 +1,20 @@
 <br />
 <br />
-<h3>Take your fitness to the next level with these intense-yet-inspiring words</h3>
+  <div class="booyah-box col-10 offset-1">
+    <h1>Take your fitness to the next level with these intense-yet-inspiring words...</h1>
+<br />
 <br />
 
-<h1><%= @motivation.inspect %></h2>
-
+  <h1 class="font"><%= @motivation.quote %></h2>
+  <h2> - <%= @motivation.comment %></h2>
 
 <br class="clear" />
 <br />
 <br />
 
- <h3><%= link_to "I'd like to add a quote", new_motivation_path %></h3>
-<br />
+  <h3><%= link_to "I'd like another one", motivations_path %></h3>
+  <br />
+  <h3><%= link_to "Add a quote", new_motivation_path %></h3>
+
+  <br />
+</div>
